@@ -1,0 +1,14 @@
+button.choice{
+    height: 50px; 
+    width: 50px; 
+    color:white; 
+    background-color: brown;
+}
+
+p#correct{
+    display: none;
+}
+
+p#incorrect{
+    display: none;
+}
