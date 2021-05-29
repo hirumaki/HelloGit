@@ -12,3 +12,8 @@ p#correct{
 p#incorrect{
     display: none;
 }
+
+img.coins {
+    width :120px;
+    height : 120px;
+}
