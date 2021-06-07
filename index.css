@@ -1,19 +1,19 @@
-button.choice{
-    height: 50px; 
-    width: 50px; 
-    color:white; 
-    background-color: brown;
-}
-
-p#correct{
-    display: none;
-}
-
-p#incorrect{
-    display: none;
-}
-
 img.coins {
     width :120px;
     height : 120px;
+}
+
+.product-area{
+    display: flex;
+}
+
+.product{
+    position: relative;
+    width :300px;
+    height:300px;
+}
+
+img.product-image{
+    width:200px;
+    height:200px;
 }

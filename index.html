@@ -8,17 +8,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>〇×クイズ</h1>
-    <h2>問題</h2>
-        <p>パンダの肌は黒い〇か×か</p>
-    <button onclick = "buttonClick('incorrect');" class="choice">〇</button>
-    <button onclick = "buttonClick('correct');" class="choice">×</button>
-    <p id="correct">正解！</p>
-    <p id="incorrect">残念！</p>
-    <img class = "coins" src="./images/10yen_coin.png" alt="10円玉" onclick="addMoney(10)">
-    <img class = "coins" src="./images/100yen_coin.png" alt="100円玉" onclick="addMoney(100)">
+    <h1>いらっしゃいませ</h1>
+    <div class="product-area">
+        <div class='product' id='cola'>
+            <img class='product-image' src='./images/products/cola.png' alt="商品 コーラ">
+            <div class='price' value='120'>120円</div>
+            <button class='product-button' onclick="purchaseProduct('cola')">購入</button>
+        </div>
+        <div class='product' id='yakisoba'>
+            <img class='product-image' src='./images/products/yakisoba.png'　alt="商品 焼きそば">
+            <div class='price' value='360'>360円</div>
+            <button class='product-button' onclick="purchaseProduct('yakisoba')">購入</button>
+        </div>
+        <div class='product' id='takoyaki'>
+            <img class='product-image' src='./images/products/takoyaki.png'　alt="商品 たこ焼き">
+            <div class='price' value='480'>480円</div>
+            <button class='product-button' onclick="purchaseProduct('takoyaki')">購入</button>
+        </div>
+    </div>
 
-    <p>今のお金は<p id="moneyarea"></p>円です。</p>
+    <img class = "coins" src="./images/coins/10yen_coin.png" alt="10円玉" onclick="addMoney(10)">
+    <img class = "coins" src="./images/coins/100yen_coin.png" alt="100円玉" onclick="addMoney(100)">
+    <img class = "coins" src="./images/coins/500yen_coin.png" alt="500円玉" onclick="addMoney(500)">
+
+    <p>今のお金は<span id="moneyarea">0</span>円です。</p>
+    <div id = "purchased"></div>
     <script src = "index.js"></script>
 </body>
 </html>
