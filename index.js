@@ -1,9 +1,7 @@
 let money = 0;
 
 const purchaseProduct = (productName) =>{
-    console.log(productName);
     const product = document.getElementById(productName);
-    console.log(product);
     const price = product.getElementsByClassName('price')[0].attributes[1].value;
     money -= price 
     document.getElementById('moneyarea').textContent = money;
